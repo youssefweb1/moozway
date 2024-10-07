@@ -4,6 +4,7 @@ return [
     'about_us' => 'من نحن',
     'our_projects' => 'مشاريعنا',
     'our_steps' => 'خطواتنا',
+    'blogs' => 'المدونة',
     'contact_us' => 'تواصل معنا',
     'arabic' => 'العربية',
     'english' => 'English',

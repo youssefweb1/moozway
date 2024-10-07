@@ -5,6 +5,7 @@ return [
     'our_projects' => 'Our Projects',
     'our_steps' => 'Our Steps',
     'contact_us' => 'Contact Us',
+    'blogs' => 'Blogs',
     'arabic' => 'Arabic',
     'english' => 'English',
     'location' => 'In Abu Dhabi, Sultan Bin Zayed First Street, near Al Murjan Tower, Floor M, Office No. 8',

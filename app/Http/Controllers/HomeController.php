@@ -22,4 +22,8 @@ class HomeController extends Controller
     {
         return view('project');
     }
+    public function blogs()
+    {
+        return view('blog');
+    }
 }

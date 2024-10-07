@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactUsController;
 
 
 /*
@@ -20,19 +21,10 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/faqs', [HomeController::class, 'faqs'])->name('faqs');
 Route::get('/terms', [HomeController::class, 'terms'])->name('terms');
 Route::get('/project', [HomeController::class, 'project'])->name('project');
-
-
-use App\Http\Controllers\ContactUsController;
-
 Route::post('/contact', [ContactUsController::class, 'store'])->name('contact.store');
+Route::get('/blogs', [HomeController::class, 'blogs'])->name('blogs');
 
-
-
-
-
-
-
-// routes/web.php
+// lang
 Route::get('lang/{lang}', function ($lang) {
     if (in_array($lang, ['en', 'ar'])) {
         session(['locale' => $lang]);

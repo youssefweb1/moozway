@@ -37,17 +37,22 @@
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
+
 </head>
+
 <body dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
     <!-- header -->
     <header>
         <nav id="main-nav" class="px-4 relative sm:px-6 sm:py-5 py-4 mt-10 max-w-screen-xl mx-auto">
-            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-md sm:mt-0 mt-1">
+            <div class="flex justify-between items-center mx-auto  max-w-screen-md sm:mt-0 mt-1 ">
                 <div class="hidden lg:flex gap-[100px]">
                     <a href="{{ route('home') }}/#about" class="nav-li"
                         id="link-about">{{ __('messages.about_us') }}</a>
                     <a href="{{ route('home') }}/#projects" class="nav-li"
                         id="link-projects">{{ __('messages.our_projects') }}</a>
+                    <a href="{{ route('home') }}/#steps" class="nav-li"
+                        id="link-steps">{{ __('messages.our_steps') }}</a>
                 </div>
 
                 <a href="{{ route('home') }}" class="flex items-center lg:mx-auto">
@@ -56,12 +61,11 @@
                 </a>
 
                 <div class="hidden lg:flex gap-[100px]">
-                    <a href="{{ route('home') }}/#steps" class="nav-li"
-                        id="link-steps">{{ __('messages.our_steps') }}</a>
+                    <a href="{{ route('blogs') }}" class="nav-li" id="link-blogs">{{ __('messages.blogs') }}</a>
                     <a href="{{ route('home') }}/#contact" class="nav-li"
                         id="link-contact">{{ __('messages.contact_us') }}</a>
-                </div>
 
+                </div>
 
                 <!-- Language Icon with Dropdown -->
                 <div dir="ltr" class="absolute  left-5 mt-1 lg:ml-4 ml-14 changedis ">
@@ -70,7 +74,6 @@
                             class="w-6 h-6 cursor-pointer" />
                     </button>
                 </div>
-
                 <div id="language-dropdown" dir="rtl"
                     class="absolute left-0  top-[5.9rem] z-[9999] w-[156px] h-[auto] flex flex-col items-center justify-center rounded-[20px] border border-white bg-white backdrop-blur-[17.5px] hidden ">
                     <div class="py-4 w-full px-7" role="menu" aria-orientation="vertical"
@@ -105,7 +108,6 @@
                     </div>
                 </div>
 
-
                 <!-- Mobile Menu Toggle Button -->
                 <button id="menu-toggle" type="button" class="inline-flex items-center ml-1.5 lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-[29.274px] h-[24.632px]" viewBox="0 0 30 18"
@@ -132,42 +134,44 @@
                 <span class="text-white mx-3 ltr:text-[18px] text-[14px] font-[300]">
                     {{ __('messages.close') }}</span>
             </div>
-            <ul class="flex flex-col mt-10 space-y-16 p-4 text-lg">
+            <ul class="flex flex-col mt-5 space-y-10 p-4 text-lg">
                 <li>
-                    <a href="{{ route('home') }}/#"
-                        class="block py-2 hover:text-[#4D63EB] ltr:text-[25px] text-[30px] font-[500]">
+                    <a href="{{ route('home') }}/#" class="block py-2 hover:text-[#4D63EB] text-[25px] font-[500]">
                         {{ __('messages.about_us') }}
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('home') }}/#"
-                        class="block py-2 hover:text-[#4D63EB] ltr:text-[25px] text-[30px] font-[300]">
+                    <a href="{{ route('home') }}/#" class="block py-2 hover:text-[#4D63EB] text-[25px] font-[300]">
                         {{ __('messages.our_projects') }}
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('home') }}/#"
-                        class="block py-2 hover:text-[#4D63EB] ltr:text-[25px] text-[30px] font-[300]">
+                    <a href="{{ route('home') }}/#" class="block py-2 hover:text-[#4D63EB] text-[25px] font-[300]">
                         {{ __('messages.our_steps') }}
                     </a>
                 </li>
+
+
                 <li>
-                    <a href="{{ route('home') }}/#"
-                        class="block py-2 hover:text-[#4D63EB] ltr:text-[25px] text-[30px] font-[300]">
+                    <a href="{{ route('blogs') }}/#" class="block py-2 hover:text-[#4D63EB] text-[25px] font-[300]">
+                        {{ __('messages.blogs') }}
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('home') }}/#" class="block py-2 hover:text-[#4D63EB] text-[25px] font-[300]">
                         {{ __('messages.contact_us') }}
                     </a>
                 </li>
 
-                <ul>
-                    <li>
-                        <a href="javascript:void(0);"
-                            onclick="changeLanguage('{{ app()->getLocale() == 'ar' ? 'en' : 'ar' }}')"
-                            class="block py-2 hover:text-[#4D63EB] ltr:text-[25px] text-[30px] font-[300]">
-                            {{ app()->getLocale() == 'ar' ? 'English' : 'العربية' }}
-                        </a>
-                    </li>
+                <li>
+                    <a href="javascript:void(0);"
+                        onclick="changeLanguage('{{ app()->getLocale() == 'ar' ? 'en' : 'ar' }}')"
+                        class="block py-2 hover:text-[#4D63EB]  text-[25px] font-[300]">
+                        {{ app()->getLocale() == 'ar' ? 'English' : 'العربية' }}
+                    </a>
+                </li>
 
-                </ul>
 
         </div>
 
@@ -284,47 +288,53 @@
                     <div class="mx-auto flex flex-col justify-end col-span-2 md:col-span-1 sm:col-span-full	">
                         <div class="flex mt-4 space-x-4 sm:mb-5 justify-center lg:mt-0 ">
                             <a href=""
-                                class="w-10 h-10 rtl:me-4 rounded-full border border-gray-500 border-2  flex justify-center items-center hover:bg-indigo-600 hover:border-0 duration-300">
+                                class="w-10 h-10 rtl:me-4 rounded-full border border-gray-500 border-2  flex justify-center items-center bg-white hover:border-0 duration-300">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.86777 3.94184C10.2986 3.94184 10.6478 3.59262 10.6478 3.16184C10.6478 2.73105 10.2986 2.38184 9.86777 2.38184C9.43699 2.38184 9.08777 2.73105 9.08777 3.16184C9.08777 3.59262 9.43699 3.94184 9.86777 3.94184Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.25 6.5C3.25 8.29238 4.70763 9.75 6.5 9.75C8.29238 9.75 9.75 8.29238 9.75 6.5C9.75 4.70763 8.29238 3.25 6.5 3.25C4.70763 3.25 3.25 4.70763 3.25 6.5ZM4.875 6.5C4.875 5.60381 5.60381 4.875 6.5 4.875C7.39619 4.875 8.125 5.60381 8.125 6.5C8.125 7.39619 7.39619 8.125 6.5 8.125C5.60381 8.125 4.875 7.39619 4.875 6.5Z"
+                                        fill="red" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.25 13H9.75C11.4205 13 13 11.4205 13 9.75V3.25C13 1.5795 11.4205 0 9.75 0H3.25C1.5795 0 0 1.5795 0 3.25V9.75C0 11.4205 1.5795 13 3.25 13ZM1.625 3.25C1.625 2.49031 2.49031 1.625 3.25 1.625H9.75C10.5097 1.625 11.375 2.49031 11.375 3.25V9.75C11.375 10.5097 10.5097 11.375 9.75 11.375H3.25C2.47569 11.375 1.625 10.5243 1.625 9.75V3.25Z"
+                                        fill="red" />
+                                </svg>
+
+                            </a>
+
+                            <a href=""
+                                class="w-10 h-10 rounded-full border border-gray-500 border-2  flex justify-center items-center bg-white hover:border-0 duration-300">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15"
+                                    viewBox="0 0 9 15" fill="#4D63EB">
+                                    <path
+                                        d="M2.69904 14.393L2.67857 8.09607H0V5.39738H2.67857V3.59825C2.67857 1.17015 4.17099 0 6.32088 0C7.35069 0 8.23577 0.0772455 8.4937 0.111771V2.64928L7.00264 2.64996C5.83342 2.64996 5.60703 3.20973 5.60703 4.03116V5.39738H8.92857L8.03571 8.09607H5.60702V14.393H2.69904Z"
+                                        fill="#4D63EB" />
+                                </svg>
+
+                            </a>
+
+                            <a href=""
+                                class="w-10 h-10  rounded-full border border-gray-500 border-2  flex justify-center items-center bg-white hover:border-0 duration-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                     viewBox="0 0 20 20" fill="none">
                                     <g id="Social Media">
                                         <path id="Vector"
                                             d="M11.3214 8.93666L16.4919 3.05566H15.2667L10.7772 8.16205L7.1914 3.05566H3.05566L8.47803 10.7774L3.05566 16.9446H4.28097L9.022 11.552L12.8088 16.9446H16.9446L11.3211 8.93666H11.3214ZM9.64322 10.8455L9.09382 10.0765L4.72246 3.95821H6.60445L10.1322 8.8959L10.6816 9.66481L15.2672 16.083H13.3852L9.64322 10.8458V10.8455Z"
-                                            fill="white" />
+                                            fill="black" />
                                     </g>
                                 </svg>
                             </a>
 
                             <a href=""
-                                class="w-10 h-10 rounded-full border border-gray-500 border-2  flex justify-center items-center hover:bg-indigo-600 hover:border-0 duration-300">
+                                class="w-10 h-10 rounded-full border border-gray-500 border-2  flex justify-center items-center bg-white hover:border-0 duration-300">
                                 <svg class="w-[1.25rem] h-[0.875rem] text-white" viewBox="0 0 16 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M13.9346 1.13529C14.5684 1.30645 15.0665 1.80588 15.2349 2.43896C15.5413 3.58788 15.5413 5.98654 15.5413 5.98654C15.5413 5.98654 15.5413 8.3852 15.2349 9.53412C15.0642 10.1695 14.5661 10.669 13.9346 10.8378C12.7886 11.1449 8.19058 11.1449 8.19058 11.1449C8.19058 11.1449 3.59491 11.1449 2.44657 10.8378C1.81277 10.6666 1.31461 10.1672 1.14622 9.53412C0.839844 8.3852 0.839844 5.98654 0.839844 5.98654C0.839844 5.98654 0.839844 3.58788 1.14622 2.43896C1.31695 1.80353 1.81511 1.30411 2.44657 1.13529C3.59491 0.828125 8.19058 0.828125 8.19058 0.828125C8.19058 0.828125 12.7886 0.828125 13.9346 1.13529ZM10.541 5.98654L6.72178 8.19762V3.77545L10.541 5.98654Z"
-                                        fill="currentColor" />
-                                </svg>
-
-                            </a>
-
-                            <a href=""
-                                class="w-10 h-10  rounded-full border border-gray-500 border-2  flex justify-center items-center hover:bg-indigo-600 hover:border-0 duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    viewBox="0 0 20 20" fill="none">
-                                    <g id="Social Media">
-                                        <path id="Vector"
-                                            d="M11.3214 8.93666L16.4919 3.05566H15.2667L10.7772 8.16205L7.1914 3.05566H3.05566L8.47803 10.7774L3.05566 16.9446H4.28097L9.022 11.552L12.8088 16.9446H16.9446L11.3211 8.93666H11.3214ZM9.64322 10.8455L9.09382 10.0765L4.72246 3.95821H6.60445L10.1322 8.8959L10.6816 9.66481L15.2672 16.083H13.3852L9.64322 10.8458V10.8455Z"
-                                            fill="white" />
-                                    </g>
-                                </svg>
-                            </a>
-
-                            <a href=""
-                                class="w-10 h-10 rounded-full border border-gray-500 border-2  flex justify-center items-center hover:bg-indigo-600 hover:border-0 duration-300">
-                                <svg class="w-[1.25rem] h-[0.875rem] text-white" viewBox="0 0 16 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M13.9346 1.13529C14.5684 1.30645 15.0665 1.80588 15.2349 2.43896C15.5413 3.58788 15.5413 5.98654 15.5413 5.98654C15.5413 5.98654 15.5413 8.3852 15.2349 9.53412C15.0642 10.1695 14.5661 10.669 13.9346 10.8378C12.7886 11.1449 8.19058 11.1449 8.19058 11.1449C8.19058 11.1449 3.59491 11.1449 2.44657 10.8378C1.81277 10.6666 1.31461 10.1672 1.14622 9.53412C0.839844 8.3852 0.839844 5.98654 0.839844 5.98654C0.839844 5.98654 0.839844 3.58788 1.14622 2.43896C1.31695 1.80353 1.81511 1.30411 2.44657 1.13529C3.59491 0.828125 8.19058 0.828125 8.19058 0.828125C8.19058 0.828125 12.7886 0.828125 13.9346 1.13529ZM10.541 5.98654L6.72178 8.19762V3.77545L10.541 5.98654Z"
-                                        fill="currentColor" />
+                                        fill="red" />
                                 </svg>
 
                             </a>
