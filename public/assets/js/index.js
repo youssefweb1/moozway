@@ -128,3 +128,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    const alertError = document.getElementById('alert-error');
+    const alertSuccess = document.getElementById('alert-success');
+
+    // Show error alert if it exists
+    if (alertError) {
+        setTimeout(() => {
+            alertError.classList.remove('opacity-0');
+            alertError.classList.add('opacity-100');
+        }, 100); // Fade-in after page load
+
+        // Hide after 5 seconds
+        setTimeout(() => {
+            alertError.classList.remove('opacity-100');
+            alertError.classList.add('opacity-0');
+        }, 5000); // 5 seconds delay
+    }
+
+    // Show success alert if it exists
+    if (alertSuccess) {
+        setTimeout(() => {
+            alertSuccess.classList.remove('opacity-0');
+            alertSuccess.classList.add('opacity-100');
+        }, 100); // Fade-in after page load
+
+        // Hide after 5 seconds
+        setTimeout(() => {
+            alertSuccess.classList.remove('opacity-100');
+            alertSuccess.classList.add('opacity-0');
+        }, 5000); // 5 seconds delay
+    }
+});
+

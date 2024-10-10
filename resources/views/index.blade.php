@@ -367,7 +367,7 @@
             </svg>
 
         </div>
-        <div style="position: absolute; left: 0; top: 120px;z-index:-9999;"
+        <div style="position: absolute; left: 10px; top: 120px;z-index:-9999;"
             class="circle-mobile animate__animated animate__pulse animate__infinite">
             <svg width="88" height="118" viewBox="0 0 160 161" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_334_48)">
@@ -450,6 +450,36 @@
     <!-- end #sec1 hero -->
 
     <div class="max-w-screen-xl mx-auto mx-auto px-4 pb-8">
+
+
+
+        @if($errors->any())
+        <div id="alert-error" class="flex items-center fixed top-16 w-auto transform px-10 py-4 mb-4 text-red-800 rounded-lg bg-red-50 transition-opacity duration-500 ease-in-out opacity-0 z-[9999999]" role="alert">
+            <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+            </svg>
+            <span class="sr-only">Error</span>
+            <div class="ms-3 text-sm font-medium">
+                @foreach ($errors->all() as $error)
+                    {{ $error }}
+                @endforeach
+            </div>
+        </div>
+        @endif
+        
+        @if(session('success'))
+        <div id="alert-success" class="flex items-center fixed top-16 w-auto transform px-10 py-4 mb-4 text-green-800 rounded-lg bg-green-50  transition-opacity duration-500 ease-in-out opacity-0 z-[9999999]" role="alert">
+                <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"></path>
+                </svg>
+                
+                <div class="ms-3 text-md font-medium">
+                    Message sent successfully!
+                </div>
+            </div>
+        @endif
+
+
         <!-- #sec2 partners -->
         <section id="sec2" class="flex flex-col py-10">
             <h2 class="ltr:text-left rtl:text-right text-[#424356]  text-[19px] font-light leading-normal mb-4">
@@ -505,8 +535,8 @@
                     <div style="background-image: url('{{ asset('assets/images/Frame 2.png') }}');"
                         class="rtl:ml-8 image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
                         <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mr-5">
-                                <span class="text-white text-right font-alexandria text-lg font-medium leading-[203%]">
+                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
                                     Party Wizard app
                                 </span>
 
@@ -529,8 +559,8 @@
                     <div style="background-image: url('{{ asset('assets/images/Frame 1.png') }}');"
                         class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
                         <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mr-5">
-                                <span class="text-white text-right font-alexandria text-lg font-medium leading-[203%]">
+                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
                                     Party Wizard app
                                 </span>
 
@@ -553,8 +583,8 @@
                     <div style="background-image: url('{{ asset('assets/images/Frame 3.png') }}');"
                         class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
                         <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mr-5">
-                                <span class="text-white text-right font-alexandria text-lg font-medium leading-[203%]">
+                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
                                     Party Wizard app
                                 </span>
 
@@ -577,8 +607,8 @@
                     <div style="background-image: url('{{ asset('assets/images/Frame 4.png') }}');"
                         class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
                         <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mr-5">
-                                <span class="text-white text-right font-alexandria text-lg font-medium leading-[203%]">
+                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
                                     Party Wizard app
                                 </span>
 
@@ -601,8 +631,8 @@
                     <div style="background-image: url('{{ asset('assets/images/Frame 5.png') }}');"
                         class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
                         <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mr-5">
-                                <span class="text-white text-right font-alexandria text-lg font-medium leading-[203%]">
+                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
                                     Party Wizard app
                                 </span>
 
@@ -622,33 +652,7 @@
                 </a>
 
             </div>
-
-            <!-- Column layout for mobile screens -->
-            <div class="block hidden space-y-6">
-                <a href="">
-                    <div style="background-image: url('{{ asset('assets/images/Frame 2.png') }}');"
-                        class="image-hover w-full h-[300px] rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
-                        <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-10 mb-5 mr-5">
-                                <span class="text-white text-right font-alexandria text-lg font-medium leading-[203%]">
-                                    Party Wizard app
-                                </span>
-
-                                <div class="flex gap-3 mt-4">
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        UI/UX Design
-                                    </button>
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        Development
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+     
         </section>
         <!-- end #sec4 portfolio -->
 

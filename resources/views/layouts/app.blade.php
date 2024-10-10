@@ -287,57 +287,62 @@
 
                     <div class="mx-auto flex flex-col justify-end col-span-2 md:col-span-1 sm:col-span-full	">
                         <div class="flex mt-4 space-x-4 sm:mb-5 justify-center lg:mt-0 ">
+
                             <a href=""
-                                class="w-10 h-10 rtl:me-4 rounded-full border border-gray-500 border-2  flex justify-center items-center bg-white hover:border-0 duration-300">
-                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M9.86777 3.94184C10.2986 3.94184 10.6478 3.59262 10.6478 3.16184C10.6478 2.73105 10.2986 2.38184 9.86777 2.38184C9.43699 2.38184 9.08777 2.73105 9.08777 3.16184C9.08777 3.59262 9.43699 3.94184 9.86777 3.94184Z"
-                                        fill="white" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M3.25 6.5C3.25 8.29238 4.70763 9.75 6.5 9.75C8.29238 9.75 9.75 8.29238 9.75 6.5C9.75 4.70763 8.29238 3.25 6.5 3.25C4.70763 3.25 3.25 4.70763 3.25 6.5ZM4.875 6.5C4.875 5.60381 5.60381 4.875 6.5 4.875C7.39619 4.875 8.125 5.60381 8.125 6.5C8.125 7.39619 7.39619 8.125 6.5 8.125C5.60381 8.125 4.875 7.39619 4.875 6.5Z"
-                                        fill="red" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M3.25 13H9.75C11.4205 13 13 11.4205 13 9.75V3.25C13 1.5795 11.4205 0 9.75 0H3.25C1.5795 0 0 1.5795 0 3.25V9.75C0 11.4205 1.5795 13 3.25 13ZM1.625 3.25C1.625 2.49031 2.49031 1.625 3.25 1.625H9.75C10.5097 1.625 11.375 2.49031 11.375 3.25V9.75C11.375 10.5097 10.5097 11.375 9.75 11.375H3.25C2.47569 11.375 1.625 10.5243 1.625 9.75V3.25Z"
-                                        fill="red" />
+                            class="w-[45px] h-[45px] rtl:me-4 rounded-full flex justify-center items-center bg-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6156 1.40922C20.5577 1.65857 21.2996 2.38934 21.5525 3.31549C22.0218 5.00588 21.9998 8.53022 21.9998 8.53022C21.9998 8.53022 21.9965 12.0351 21.5415 13.7244C21.2853 14.6495 20.5401 15.3792 19.5991 15.6275C17.8778 16.07 10.9911 16.0625 10.9911 16.0625C10.9911 16.0625 4.12318 16.0549 2.38422 15.5908C1.44108 15.3414 0.699107 14.6107 0.446286 13.6856C-0.00439528 12.0125 0 8.48921 0 8.48921C0 8.48921 0.00439852 4.98321 0.458377 3.29283C0.713397 2.36775 1.47626 1.62079 2.3996 1.3736C4.12209 0.929952 11.0076 0.937508 11.0076 0.937508C11.0076 0.937508 17.8942 0.945064 19.6156 1.40922ZM8.81006 5.26123L8.80457 11.7378L14.5337 8.50492L8.81006 5.26123Z" fill="#F34242"/>
                                 </svg>
-
-                            </a>
-
-                            <a href=""
-                                class="w-10 h-10 rounded-full border border-gray-500 border-2  flex justify-center items-center bg-white hover:border-0 duration-300">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15"
-                                    viewBox="0 0 9 15" fill="#4D63EB">
-                                    <path
-                                        d="M2.69904 14.393L2.67857 8.09607H0V5.39738H2.67857V3.59825C2.67857 1.17015 4.17099 0 6.32088 0C7.35069 0 8.23577 0.0772455 8.4937 0.111771V2.64928L7.00264 2.64996C5.83342 2.64996 5.60703 3.20973 5.60703 4.03116V5.39738H8.92857L8.03571 8.09607H5.60702V14.393H2.69904Z"
-                                        fill="#4D63EB" />
-                                </svg>
-
-                            </a>
+                        </a>
 
                             <a href=""
-                                class="w-10 h-10  rounded-full border border-gray-500 border-2  flex justify-center items-center bg-white hover:border-0 duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    viewBox="0 0 20 20" fill="none">
-                                    <g id="Social Media">
-                                        <path id="Vector"
-                                            d="M11.3214 8.93666L16.4919 3.05566H15.2667L10.7772 8.16205L7.1914 3.05566H3.05566L8.47803 10.7774L3.05566 16.9446H4.28097L9.022 11.552L12.8088 16.9446H16.9446L11.3211 8.93666H11.3214ZM9.64322 10.8455L9.09382 10.0765L4.72246 3.95821H6.60445L10.1322 8.8959L10.6816 9.66481L15.2672 16.083H13.3852L9.64322 10.8458V10.8455Z"
-                                            fill="black" />
+                                class="w-[45px] h-[45px]  rounded-full flex justify-center items-center bg-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                    <path d="M15.9407 6.36766C16.6365 6.36766 17.2007 5.80354 17.2007 5.10766C17.2007 4.41178 16.6365 3.84766 15.9407 3.84766C15.2448 3.84766 14.6807 4.41178 14.6807 5.10766C14.6807 5.80354 15.2448 6.36766 15.9407 6.36766Z" fill="url(#paint0_linear_384_17)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 10.5C5.25 13.3954 7.60462 15.75 10.5 15.75C13.3954 15.75 15.75 13.3954 15.75 10.5C15.75 7.60462 13.3954 5.25 10.5 5.25C7.60462 5.25 5.25 7.60462 5.25 10.5ZM7.875 10.5C7.875 9.05231 9.05231 7.875 10.5 7.875C11.9477 7.875 13.125 9.05231 13.125 10.5C13.125 11.9477 11.9477 13.125 10.5 13.125C9.05231 13.125 7.875 11.9477 7.875 10.5Z" fill="url(#paint1_linear_384_17)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 21H15.75C18.4485 21 21 18.4485 21 15.75V5.25C21 2.5515 18.4485 0 15.75 0H5.25C2.5515 0 0 2.5515 0 5.25V15.75C0 18.4485 2.5515 21 5.25 21ZM2.625 5.25C2.625 4.02281 4.02281 2.625 5.25 2.625H15.75C16.9772 2.625 18.375 4.02281 18.375 5.25V15.75C18.375 16.9772 16.9772 18.375 15.75 18.375H5.25C3.99919 18.375 2.625 17.0008 2.625 15.75V5.25Z" fill="url(#paint2_linear_384_17)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_384_17" x1="15.3407" y1="6.24766" x2="16.1807" y2="3.60766" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF8934"/>
+                                    <stop offset="0.485011" stop-color="#F136CF"/>
+                                    <stop offset="1" stop-color="#E20938"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_384_17" x1="8" y1="15.25" x2="11.5" y2="4.25" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF8934"/>
+                                    <stop offset="0.485011" stop-color="#F136CF"/>
+                                    <stop offset="1" stop-color="#E20938"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_384_17" x1="5.5" y1="20" x2="12.5" y2="-2" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF8934"/>
+                                    <stop offset="0.485011" stop-color="#F136CF"/>
+                                    <stop offset="1" stop-color="#E20938"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>
+                                </a>
+                                
+                                <a href=""
+                                    class="w-[45px] h-[45px]  rounded-full flex justify-center items-center bg-white">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="13" height="21" viewBox="0 0 13 21" fill="none">
+    <path d="M3.92981 21L3.9 11.8125H0V7.875H3.9V5.25C3.9 1.7073 6.07296 0 9.20319 0C10.7026 0 11.9913 0.112704 12.3668 0.163078V3.8654L10.1958 3.8664C8.49346 3.8664 8.16383 4.68313 8.16383 5.88163V7.875H13L11.7 11.8125H8.16382V21H3.92981Z" fill="#4055DD"/>
+    </svg>
+                                </a>
+                            <a href=""
+                                class="w-[45px] h-[45px] rounded-full flex justify-center items-center bg-white">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <mask id="mask0_384_34" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+                                    <path d="M0 0H18V18H0V0Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_384_34)">
+                                    <path d="M14.175 0.84375H16.9354L10.9054 7.75318L18 17.1569H12.4457L8.09229 11.4548L3.11657 17.1569H0.353571L6.80271 9.76404L0 0.845036H5.69571L9.62486 6.05604L14.175 0.84375ZM13.2043 15.5009H14.7343L4.86 2.41361H3.21943L13.2043 15.5009Z" fill="black"/>
                                     </g>
-                                </svg>
-                            </a>
-
-                            <a href=""
-                                class="w-10 h-10 rounded-full border border-gray-500 border-2  flex justify-center items-center bg-white hover:border-0 duration-300">
-                                <svg class="w-[1.25rem] h-[0.875rem] text-white" viewBox="0 0 16 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M13.9346 1.13529C14.5684 1.30645 15.0665 1.80588 15.2349 2.43896C15.5413 3.58788 15.5413 5.98654 15.5413 5.98654C15.5413 5.98654 15.5413 8.3852 15.2349 9.53412C15.0642 10.1695 14.5661 10.669 13.9346 10.8378C12.7886 11.1449 8.19058 11.1449 8.19058 11.1449C8.19058 11.1449 3.59491 11.1449 2.44657 10.8378C1.81277 10.6666 1.31461 10.1672 1.14622 9.53412C0.839844 8.3852 0.839844 5.98654 0.839844 5.98654C0.839844 5.98654 0.839844 3.58788 1.14622 2.43896C1.31695 1.80353 1.81511 1.30411 2.44657 1.13529C3.59491 0.828125 8.19058 0.828125 8.19058 0.828125C8.19058 0.828125 12.7886 0.828125 13.9346 1.13529ZM10.541 5.98654L6.72178 8.19762V3.77545L10.541 5.98654Z"
-                                        fill="red" />
-                                </svg>
+                                    </svg>
 
                             </a>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -368,7 +373,7 @@
     <!-- end top -->
 
     <!-- loading -->
-    <div class="loading-page">
+    {{-- <div class="loading-page">
         <svg id="svg" width="60" height="50" viewBox="0 0 60 50" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path class="path2"
@@ -380,7 +385,7 @@
             <path class="path4" d="M41.9241 25.4044L29.9181 13.3984L17.9085 25.4044L29.9181 37.414L41.9241 25.4044Z"
                 fill="#424356" />
         </svg>
-    </div>
+    </div> --}}
     <!-- end loading -->
 
 
