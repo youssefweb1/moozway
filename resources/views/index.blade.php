@@ -528,130 +528,170 @@
             <h2 class="ltr:text-left rtl:text-right text-[#424356] text-[19px] font-light leading-normal mb-4">
                 {{ __('messages.portfolio') }}
             </h2>
+<!-- Link to Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-            <!-- Container for project cards with horizontal scrolling on larger screens -->
-            <div class="flex overflow-x-auto  sm:space-x-8 space-x-0 no-scrollbar project-cards ">
-                <a href="">
-                    <div style="background-image: url('{{ asset('assets/images/Frame 2.png') }}');"
-                        class="rtl:ml-8 image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
-                        <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
-                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
-                                    Party Wizard app
-                                </span>
+<!-- Link to Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-                                <div class="flex gap-3 mt-4">
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        UI/UX Design
-                                    </button>
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        Development
-                                    </button>
-                                </div>
+<!-- Container for Swiper -->
+<div class="swiper-container relative">
+    <div class="swiper-wrapper relative">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+            <a href="">
+                <div style="background-image: url('{{ asset('assets/images/Frame 2.png') }}');"
+                    class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
+                    <div class="overlay">
+                        <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                            <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
+                                Party Wizard app
+                            </span>
+                            <div class="flex gap-3 mt-4">
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    UI/UX Design
+                                </button>
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    Development
+                                </button>
                             </div>
                         </div>
                     </div>
-                </a>
-
-                <a href="">
-                    <div style="background-image: url('{{ asset('assets/images/Frame 1.png') }}');"
-                        class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
-                        <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
-                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
-                                    Party Wizard app
-                                </span>
-
-                                <div class="flex gap-3 mt-4">
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        UI/UX Design
-                                    </button>
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        Development
-                                    </button>
-                                </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+            <a href="">
+                <div style="background-image: url('{{ asset('assets/images/Frame 1.png') }}');"
+                    class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
+                    <div class="overlay">
+                        <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                            <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
+                                Party Wizard app
+                            </span>
+                            <div class="flex gap-3 mt-4">
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    UI/UX Design
+                                </button>
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    Development
+                                </button>
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
+        </div>
 
-                <a href="">
-                    <div style="background-image: url('{{ asset('assets/images/Frame 3.png') }}');"
-                        class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
-                        <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
-                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
-                                    Party Wizard app
-                                </span>
-
-                                <div class="flex gap-3 mt-4">
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        UI/UX Design
-                                    </button>
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        Development
-                                    </button>
-                                </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+            <a href="">
+                <div style="background-image: url('{{ asset('assets/images/Frame 3.png') }}');"
+                    class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
+                    <div class="overlay">
+                        <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                            <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
+                                Party Wizard app
+                            </span>
+                            <div class="flex gap-3 mt-4">
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    UI/UX Design
+                                </button>
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    Development
+                                </button>
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
+        </div>
 
-                <a href="">
-                    <div style="background-image: url('{{ asset('assets/images/Frame 4.png') }}');"
-                        class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
-                        <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
-                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
-                                    Party Wizard app
-                                </span>
-
-                                <div class="flex gap-3 mt-4">
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        UI/UX Design
-                                    </button>
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        Development
-                                    </button>
-                                </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+            <a href="">
+                <div style="background-image: url('{{ asset('assets/images/Frame 4.png') }}');"
+                    class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
+                    <div class="overlay">
+                        <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                            <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
+                                Party Wizard app
+                            </span>
+                            <div class="flex gap-3 mt-4">
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    UI/UX Design
+                                </button>
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    Development
+                                </button>
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
+        </div>
 
-                <a href="">
-                    <div style="background-image: url('{{ asset('assets/images/Frame 5.png') }}');"
-                        class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
-                        <div class="overlay">
-                            <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
-                                <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
-                                    Party Wizard app
-                                </span>
-
-                                <div class="flex gap-3 mt-4">
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        UI/UX Design
-                                    </button>
-                                    <button
-                                        class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
-                                        Development
-                                    </button>
-                                </div>
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+            <a href="">
+                <div style="background-image: url('{{ asset('assets/images/Frame 5.png') }}');"
+                    class="image-hover sm:w-[423px] sm:h-[403px] w-full h-[321px] flex-shrink-0 rounded-[20px] border-[2px] border-solid border-[rgba(255,255,255,0.5)] bg-lightgray bg-cover bg-no-repeat bg-center">
+                    <div class="overlay">
+                        <div class="flex flex-col justify-start sm:mb-10 sm:mr-5 mb-5 mx-5">
+                            <span class="text-white rtl:text-right ltr:text-left font-alexandria text-lg font-medium leading-[203%]">
+                                Party Wizard app
+                            </span>
+                            <div class="flex gap-3 mt-4">
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    UI/UX Design
+                                </button>
+                                <button class="sm:text-[16px] text-[14px] sm:w-[144px] w-[112px] sm:h-[47px] h-[37px] font-light flex-shrink-0 border rounded-[10px] border-gray-50 bg-white/5 backdrop-blur-[20px] text-white">
+                                    Development
+                                </button>
                             </div>
                         </div>
                     </div>
-                </a>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination" style="
+    bottom: -45px !important;!i;!;
+"></div>
+    <!-- Add Navigation -->
+</div>
 
-            </div>
+<script>
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1, // عدد الشرائح الافتراضي
+    spaceBetween: 100,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1, 
+        },
+        800: {
+            slidesPerView: 2, 
+        },
+        1024: {
+            slidesPerView: 3, 
+        },
+    },
+});
+
+
+</script>
+
+
      
         </section>
         <!-- end #sec4 portfolio -->
