@@ -410,7 +410,7 @@
     <!-- end top -->
 
     <!-- loading -->
-    {{-- <div class="loading-page">
+    <div class="loading-page">
         <svg id="svg" width="60" height="50" viewBox="0 0 60 50" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path class="path2"
@@ -422,7 +422,7 @@
             <path class="path4" d="M41.9241 25.4044L29.9181 13.3984L17.9085 25.4044L29.9181 37.414L41.9241 25.4044Z"
                 fill="#424356" />
         </svg>
-    </div> --}}
+    </div>
     <!-- end loading -->
 
 
